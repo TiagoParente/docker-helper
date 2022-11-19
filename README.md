@@ -13,5 +13,5 @@
 
 <h2> 📂 Arquivos Dockerfile</h2>
 
-<a href="#">Angular</a> <br><br>
-<a href="#">Laravel</a> <br><br>
+🔹<a href="#">Angular</a> <br>
+🔹<a href="#">Laravel</a> <br><br>
