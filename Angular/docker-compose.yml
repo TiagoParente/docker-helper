@@ -3,11 +3,13 @@ version: "3.3"
 
 services:
   node:
-    container_name: angularcontainer
+    container_name: lilla-app
     build: ./.docker/node/
     ports:
       - 4200:4200
     volumes:
       - "./:/var/www/html"
     working_dir: /var/www/html
-    command: ng serve --host 0.0.0.0 --poll=2000
+    command: > 
+        bash -c "npm install && ng serve --host 0.0.0.0 --poll=2000"
+  #ATENÇÃO: Manter o command acima, caso queira que ao subir o container esses comandos sejam rodados por padrão.
