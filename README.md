@@ -10,7 +10,7 @@
 <strong>docker-compose up</strong>: para subir o seu projeto utilize esse comando. <br><br>
 <strong>docker-compose build --no-cache</strong>: caso tenha atualizado alguma informação em seu arquivo dockerfile ou docker-compose, utilize esse comando para atualizar os container. <br><br>
 <strong>docker-compose down</strong>: para remover os container utilize esse comando.<br><br>
-<strong>docker-compose exec ID_CONTAINER NOME_COMANDO</strong>: Caso queira executar algum comando dentro do container.
+<strong>docker-compose exec -it ID_CONTAINER NOME_COMANDO</strong>: Caso queira executar algum comando dentro do container.
 
 <h2> 📂 Arquivos Dockerfile</h2>
 
