@@ -12,3 +12,5 @@ ENV PATH=/home/node/.npm-global/bin:$PATH
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 RUN npm install -g @angular/cli@9.1.15
+RUN echo "alias ngup='ng serve --host 0.0.0.0 --poll=2000'" >> ~/.bashrc
+RUN echo "alias ngbuild='ng build --prod --outputHashing=all'" >> ~/.bashrc
