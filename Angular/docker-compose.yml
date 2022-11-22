@@ -11,6 +11,6 @@ services:
       - "./:/var/www/html"
     working_dir: /var/www/html
     command: > 
-        bash -c "npm install && ngbuild"
-  #Caso queira criar um docker-compose de build, use esse comando: bash -c "npm install && ngup"
+        bash -c "npm install && ng build --prod --outputHashing=all"
+  #Caso queira criar um docker-compose de build, use esse comando: bash -c "npm install && ng serve --host 0.0.0.0"
   #ATENÇÃO: Manter o command acima, caso queira que ao subir o container esses comandos sejam rodados por padrão.
