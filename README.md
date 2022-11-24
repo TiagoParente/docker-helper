@@ -17,4 +17,4 @@
 <h2> 📂 Arquivos Dockerfile</h2>
 
 🔹<a href="https://github.com/TiagoParente/docker/tree/main/Angular">Angular</a> <br>
-🔹<a href="#" style="pointer-events: none">Laravel</a> <em>(Em desenvolvimento)</em> <br><br>
+🔹<a href="#" style="pointer-events: none">Laravel</a> <em>(Atualmente utilizando o Sail)</em> <br><br>
