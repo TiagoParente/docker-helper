@@ -5,6 +5,7 @@ services:
   node:
     container_name: lilla-app
     build: ./.docker/node/
+    tty: true
     ports:
       - 4200:4200
     volumes:
