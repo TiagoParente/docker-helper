@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  node:
+    container_name: name_container
+    build: ./.docker/node/
+    ports:
+      - 4200:4200
+    volumes:
+      - "./:/var/www/html/name_project"
+    working_dir: /var/www/html
+    command: > 
+        bash -c "ng new name_project"
