@@ -18,3 +18,16 @@
 
 🔹<a href="https://github.com/TiagoParente/docker/tree/main/Angular">Angular</a> <br>
 🔹<a href="#" style="pointer-events: none">Laravel</a> <em>(Atualmente utilizando o Sail)</em> <br><br>
+
+<h2> Sail </h2>
+Caso precise criar um novo banco de dados no container gerado pelo sail, será necessário alterar as permissões, basta rodar os comandos abaixo:
+
+```
+sail exec mysql bash
+mysql -u root -p
+password: password
+GRANT ALL PRIVILEGES ON *.* TO 'sail'@'%';
+FLUSH PRIVILEGES;
+EXIT;
+exit
+```
