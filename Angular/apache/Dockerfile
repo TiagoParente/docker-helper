@@ -1,18 +1,11 @@
-#Crie o arquivo dentro de .docker/apache
-FROM httpd:2.4
-#copy angular dist folder to container 
-COPY dist/html /usr/local/apache2/htdocs/
+# Base image
+FROM nginx:latest
 
-#copy htaccess and httpd.conf to container
-COPY .htaccess /usr/local/apache2/htdocs/
-COPY httpd.conf /usr/local/apache2/conf/httpd.conf
-#change permissions
-RUN chmod -R 755 /usr/local/apache2/htdocs/
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
 
-#expose port
-EXPOSE 4200
+# Copy the build files from local machine to container
+COPY dist/html /usr/share/nginx/html
 
-
-#Após isso, rode os seguintes comandos:
-#docker build -f ./.docker/apache/Dockerfile -t nomedasuaapp .
-#docker run -p 4200:4200 nomedasuaapp
+# Expose port 80 to the host
+EXPOSE 80
