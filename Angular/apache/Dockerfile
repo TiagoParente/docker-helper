@@ -11,3 +11,8 @@ RUN chmod -R 755 /usr/local/apache2/htdocs/
 
 #expose port
 EXPOSE 4200
+
+
+#Após isso, rode os seguintes comandos:
+#docker build -f ./.docker/apache/Dockerfile -t nomedasuaapp .
+#docker run -p 4200:4200 nomedasuaapp
