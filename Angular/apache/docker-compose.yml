@@ -1,12 +1,8 @@
-version: '3'
-services: 
-  angularui:
-   build:
-   context: .
-   dockerfile: ./.docker/apache
+version: "3.3"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/nginx/Dockerfile
     ports:
-     - '4200:4200'
-    networks:
-     - samplenet
-networks:
-samplenet: null
+      - "80:80"
