@@ -12,7 +12,8 @@
 <strong>docker-compose down</strong>: Para remover os container utilize esse comando.<br><br>
 <strong>docker-compose down --volumes</strong>: Caso queira excluir os volumes<br><br>
 <strong>docker exec -it ID_CONTAINER NOME_COMANDO</strong>: Caso queira executar algum comando dentro do container. <br><br>
-<strong>docker-compose -f docker-compose.test.yml up</strong>: Caso queira subir um container e oarquivo <em>docker-compose</em> tenha o nome personalizado, use esse comando.
+<strong>docker-compose -f docker-compose.test.yml up</strong>: Caso queira subir um container e oarquivo <em>docker-compose</em> tenha o nome personalizado, use esse comando. <br><br>
+<strong>docker network create my_network_name --subnet=10.11.0.0/16</strong>: Criar uma nova rede com IP fixo
 
 <h2> 📂 Arquivos Dockerfile</h2>
 
