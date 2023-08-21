@@ -71,6 +71,12 @@
         Criar uma nova rede com IP fixo
       </td>
     </tr>
+    <tr>
+      <td>
+        <strong>docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' NOME_DO_CONTAINER</strong>
+      </td>
+      <td>Utilizado para encontrar o IP do container</td>
+    </tr>
   </tbody>
 </table>
 
