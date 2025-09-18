@@ -77,6 +77,12 @@
       </td>
       <td>Utilizado para encontrar o IP do container</td>
     </tr>
+    <tr>
+      <td>
+        <strong>docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"</strong>
+      </td>
+      <td>Lista o nome dos container ativo</td>
+    </tr>
   </tbody>
 </table>
 
